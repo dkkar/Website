@@ -20,8 +20,8 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #000000;">
+ <!-- Navigation -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark  fixed-top" style="background-color: #000000;">
     <div class="container">
       <a class="navbar-brand" href="../../index.html">Bold & Brash</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,46 +47,24 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Power Distribution Board Complete!
+    <h1 class="mt-4 mb-3">Initial Basketball Tracking Test
     </h1>
-    <p>Posted on January 20, 2020 by Mauris Winata</p>
+    <p>Posted on January 23, 2020 by Sanjay Srinivasan</p>
     <hr>
-    <p class="lead">After careful consideration and design, the power distribution board that will be incorporated as part of this gimbal design has been fabricated. Here is the completed design: </p>
+    <p class="lead">Today we performed initial testing of the basketball tracking scheme.: </p>
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-fluid rounded mb-4" src="board_design.png" alt="board design">
+            <img class="img-fluid rounded mb-4" src="bb-test.png" alt="board design">
           </div>
           <div class="col-lg-8 ">
-            
-            <ul class="list-unstyled">
-                <li>
-                    <p class="font-weight-bold"> This board has three main purposes:</p>
-                        <ul>
-                            <li>Step down and regulate the battery voltage to 5V</li>
-                            <li>Gimbal motor ON/OFF switch</li>
-                            <ul>
-                                <li>Turns off the motors while keeping the main electronics powered for debugging purposes</li>
-                            </ul>
-                            <li>Interface with all electronics featured in the design, namely the controller, IMU and computer vision platform.</li>
-                        </ul>
-                </li>
-            </ul>
+            <p>The intended idea for this portion of the project is to be able to detect the location of a basketball given a video or image feed. Our first test consisted of using an already premade basketball tracking model. However, this proved not to be successful in tracking the basketball when it is not up close. The next step will be to train our own model and retry these tests once more to see if the results improve.</p>
           </div>
     </div>
-    <p class="lead">The board was sent to the 3D print center in E5 for fabrication and was completed in less than a week. Here is the final result:  </p>
-    <div class="row">
-        <div class="col-lg-4">
-            <img class="img-fluid rounded mb-4" src="actual_board.jpg" alt="actual board">
-          </div>
-          <div class="col-lg-8 ">
-            
-            <p>We hope to perform testing on this board once all the components arrive in the post. God willing, it will be very soon.
-          </div>
-    </div>
+
   </div>
 
 <!-- Footer -->
-  <footer class="py-2 " style="background-color: #000000;">
+  <footer class="py-2 fixed-bottom" style="background-color: #000000;">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; B&B 2020</p>
     </div>
