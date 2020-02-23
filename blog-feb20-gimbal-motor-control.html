@@ -47,36 +47,46 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Spray Painting Parts!
+    <h1 class="mt-4 mb-3">Gimbal Motor Control
     </h1>
-    <p>Posted on February 22, 2020 by Dhruvang Kushalkar</p>
+    <p>Posted on February 20, 2020 by Mauris Winata</p>
     <hr>
-    <p class="lead">The fully painted parts can be seen below, drying:</p>
+    <p class="lead">We first tested with regular BLDC ESCs: </p>
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-fluid rounded mb-4" src="img/spray_paint.JPG" alt="1st design">
+            <img class="img-fluid rounded mb-4" src="img/esc.jpg" alt="1st design">
         </div>
         <div class="col-lg-8 ">
           <ul class="list-unstyled">
-              <p> All the parts for the gimbal were manufactured out of either PVC, acrylic or 3D printed resin. The colour choice for resin was
-                black. As such, it made sense to paint the remaining members black as well to maintain unformity. The exact shade and finish of 
-                black was still a question however. High shine gloss was chosen as it allowed the final product to appeal to the eye and catch the attention
-                of others, due to the shine. The results after painting the PVC parts were very good. A concern however was the effect of the 
-                spray paint on the acrylic parts as apparently, certain paints containing acetone may dissove acrylic. To avoid such a catastrophe, 
-                the paint was first tested on a spare piece of acrylic for evidence of degradation. As no such evidence was found, the carriage and 
-                other acrylic parts were painted as well. The 3D printed parts were not painted as they were already black in colour.
+              <p>
+                After initially testing the gimbal motors with the bidirectional ESC’s purchased (left), it was clear that the
+                 performance was not up to expectation. However, upon further research it was discovered that gimbal motors did not 
+                 function too well with a regular BLDC ESC due to their construction. Thus, more suitable gimbal controller boards were
+                  purchased to remedy this issue. These types of boards are capable of stabilizing a gimbal while receiving an input 
+                  such that its direction can be changed. After receiving these boards in the mail and testing them with the motors, 
+                  the motors were able to be better controlled. 
               </p>
           </ul>
         </div>
     </div>
- 
-    <p class="lead">Mauris can be seen painting the carriage:</p>
+    <p class="lead">We then tried using 2-axis gimbal controllers:  </p>
     <div class="row">
-      <dvideoiv class="embed-responsive embed-responsive-16by9" controls>
-        <iframe class="embed-responsive-item" src="img/painting_carriage.webm" allowfullscreen></iframe>
-      </video>
-         
+          <div class="col-lg-4">
+            <img class="img-fluid rounded mb-4" src="img/gimbal_controller.jpg" alt="2nd design">
+          </div>
+          <div class="col-lg-8 ">
+            
+            <p>
+              Unfortunately, the only available gimbal controller board (left) to be purchased under such short notice was designed for 
+              2 axis drone applications. Thus, the third yaw axis is unable to be controlled. As such, a workaround is needed, as 
+              the yaw axis is the most important in our application.Since the board can only stabilize in the pitch and roll axes, 
+              the stabilization mechanism is disabled on a second board and the yaw axis is able to be controlled manually. Readings 
+              from an IMU are fed to a controller in order to filter out disturbances.
+
+            </p>
+          </div>
     </div>
+    
   </div>
   <hr>
   
