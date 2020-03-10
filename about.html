@@ -78,6 +78,23 @@
       <hr>
       <p>Bold and Brash will build on top of the traditional camera gimbal feature set, namely, video stabilization, while including the capability for basketball tracking.</p>
 
+      <h1 class="mt-4 mb-3">How It Works</h1>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>Our gimbal works by using a permanently mounted tracking camera to detect a basketball. All detection related processing is performed
+            by an Nvidia Jetson. The Jetson is not only used to locate the ball, but also predict where the ball will be. This information is then
+            sent to an Arduino, which controls the motor-controllers. There are two motor-controllers; one shared between the pitch and roll 
+            axes, and a second for the yaw axis. The gimbal-controllers then control the gimbal motors such that the tracking camera sees
+            the ball. Any camera of your choice can be placed on the carriage. As the tracking camera is also attached to the carriage, 
+            it is ensured that your personal camera also follows the ball.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid mx-auto d-block" src="img/flow.PNG">
+        </div>
+      </div>
+
       <h1 class="mt-4 mb-3">The Product</h1>
       <hr>
       <div >
